@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Container maxW={"1140px"} py={"25px"} px={4}>
+    <Container maxW={"1140px"} py={"25px"} px={4} mb={{ base: "35px" }}>
       <Flex
         h={"16px"}
         alignItems={"center"}

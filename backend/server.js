@@ -33,6 +33,8 @@ if (process.env.NODE_ENV === "production") {
   // Définit le répertoire des fichiers statiques pour l'application express,
   // qui se trouvent dans le dossier "frontend/dist".
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
+} else {
+  app.use(express.static(path.join(__dirname, "/frontend")));
 }
 
 // Définit une route globale qui capte toutes les requêtes restantes ("*").

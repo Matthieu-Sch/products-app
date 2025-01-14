@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=developement nodemon backend/server.js",
+    "dev": "NODE_ENV=development nodemon backend/server.js",
     "build": "yarn install && cd frontend && yarn install && yarn build",
     "start": "NODE_ENV=production node backend/server.js"
   },
